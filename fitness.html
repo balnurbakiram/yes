@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness</title>
+  <link rel="stylesheet" href="fitness.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+        <img class="logo" src="./IMG_2405-Photoroom.png">
+        <ul class="nav-links">
+            <li><a href="./index.html">ABOUT US</a></li>
+            <li><a href="./stretching.html">STRETCHING</a></li>
+            <li><a href="./flyyoga.html">FLY YOGA</a></li>
+            <li><a href="./fitness.html">FITNESS</a></li>
+            <li><a href="./pilates.html">PILATES</a></li>
+            <li><a href="./price.html">PRICE</a></li>
+        </ul>
+        
+    </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+      <h1>TRANSFORM YOUR BODY & MIND</h1>
+      
+  </div>
+</section>
+
+<section class="content">
+  <div class="image-container">
+      <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Workout Image">
+  </div>
+  <div class="text-box">
+      <h3>TAILORED WORKOUTS FOR YOU</h3>
+      <h2><span style="color: navy;"> PERSONALIZED</span> FITNESS & WELLNESS COACHING</h2>
+      <p>Our expert trainers design customized workout and nutrition plans to help you build strength, improve flexibility, and boost overall wellness. Whether you're a beginner or an athlete, we'll guide you every step of the way.</p>
+     
+  </div>
+  <div class="image-container">
+      <img src="https://media.istockphoto.com/id/1445279188/photo/female-acing-lat-pulldowns-in-gym.jpg?s=1024x1024&w=is&k=20&c=GIrnrWSAfOJiVhintF0KaDRRS5tJjKbVmVeVed99XOQ=" alt="Yoga Image">
+  </div>
+
+
+  <div class="yoga-container">
+    <div class="yoga-content">
+        <h1>The journey to <br> your true self.</h1>
+        <p>Stretching exercises help improve flexibility, reduce muscle tension, and enhance overall mobility. Our classes focus on dynamic and static stretches, ensuring a balanced approach to strength and relaxation.</p>
+    </div>
+    <div class="yoga-grid">
+        <div class="grid-column video-column">
+            <video controls>
+                <source src="https://media.istockphoto.com/id/863297738/video/gym.mp4?s=mp4-640x640-is&k=20&c=ZqqTQaa5e_pvPRrut_nq2owOVLlgGrr_PfYOVgtIE-A=" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="grid-column image-column">
+            <img id="image1" src="https://i.pinimg.com/736x/23/f8/f2/23f8f253857bff2bc0a6966bf3617a0f.jpg" alt="Yoga Pose 1" style="opacity:1;">
+            <img id="image2" src="https://i.pinimg.com/736x/0b/87/a0/0b87a0d4f454ebb97c8f48cd60eba849.jpg" alt="Yoga Pose 2">
+            <img id="image3" src="https://i.pinimg.com/736x/70/0d/c7/700dc7cbc6e097a48d75317f979b7984.jpg" alt="Yoga Pose 3">
+        </div>
+    </div>
+</div>
+
+
+
+
+ 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  let images = document.querySelectorAll(".image-column img");
+  let index = 0;
+  
+  setInterval(() => {
+      images.forEach(img => img.style.opacity = "0");
+      images[index].style.opacity = "1";
+      index = (index + 1) % images.length;
+  }, 3000); // Rotates images every 3 seconds
+});
+
+
+</script>
+</body>
+</html>

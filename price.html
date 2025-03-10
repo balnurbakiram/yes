@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price</title>
+  <link rel="stylesheet" href="price.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+        <img class="logo" src="./IMG_2405-Photoroom.png">
+        <ul class="nav-links">
+            <li><a href="./index.html">ABOUT US</a></li>
+            <li><a href="./stretching.html">STRETCHING</a></li>
+            <li><a href="./flyyoga.html">FLY YOGA</a></li>
+            <li><a href="./fitness.html">FITNESS</a></li>
+            <li><a href="./pilates.html">PILATES</a></li>
+            <li><a href="./price.html">PRICE</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- Pricing Plans -->
+  <div class="container">
+    <h1>Sport Gym Membership</h1>
+    <p>14 days unlimited free trial. No contract or credit card required.</p>
+    <div class="plans">
+        <div class="plan fade-in">
+            <h2>Single Session</h2>
+            <p class="price">$15 <span class="save">/package</span></p>
+            <ul>
+                <li>Personalized Workout</li>
+                <li>Exercise Form Connection</li>
+                <li>Lifestyle Plan</li>
+            </ul>
+            <button><a href="https://wa.me/77776201751?text=Hello!%20I'm%20interested%20in%20your%20products.">Choose Plan</a></button>
+        </div>
+        <div class="plan fade-in">
+            <h2>10 Session Package</h2>
+            <p class="price">$10 <span class="save">/package</span></p>
+            <p class="save">Save $30</p>
+            <ul>
+                <li>Personalized Workout</li>
+                <li>Exercise Form Connection</li>
+                <li>Lifestyle Plan</li>
+                <li>Personalized Program</li>
+            </ul>
+            <button><a href="https://wa.me/77776201751?text=Hello!%20I'm%20interested%20in%20your%20products.">Choose Plan</a></button>
+        </div>
+        <div class="plan fade-in">
+            <h2>40 Session Package</h2>
+            <p class="price">$7 <span class="save">/package</span></p>
+            <p class="save">Save $150</p>
+            <ul>
+                <li>Personalized Workout</li>
+                <li>Exercise Form Connection</li>
+                <li>Lifestyle Plan</li>
+                <li>Personalized Program</li>
+                <li>8-12 Weeks Plan</li>
+            </ul>
+            <button><a href="https://wa.me/77776201751?text=Hello!%20I'm%20interested%20in%20your%20products.">Choose Plan</a></button>
+        </div>
+    </div>
+  </div>
+
+
+
+  <script>
+     function makeCall() {
+      let confirmCall = confirm("Do you want to call +7 777 620 1751?");
+      if (confirmCall) {
+        window.location.href = "tel:+77776201751";
+      }
+    }
+   
+  </script>
+</body>
+</html>

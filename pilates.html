@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilates</title>
+  <link rel="stylesheet" href="pilates.css">
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+        <img class="logo" src="./IMG_2405-Photoroom.png">
+        <ul class="nav-links">
+            <li><a href="./index.html">ABOUT US</a></li>
+            <li><a href="./stretching.html">STRETCHING</a></li>
+            <li><a href="./flyyoga.html">FLY YOGA</a></li>
+            <li><a href="./fitness.html">FITNESS</a></li>
+            <li><a href="./pilates.html">PILATES</a></li>
+            <li><a href="./price.html">PRICE</a></li>
+        </ul>
+        
+    </nav>
+</header>
+
+
+<!-- yoga  -->
+
+<div class="yoga-container">
+  <div class="yoga-content">
+      <h1>Strengthen your core, <br> transform your body.</h1>
+      <p>Pilates exercises focus on core strength, posture, and flexibility. Our classes incorporate controlled movements that enhance muscle tone, improve balance, and promote overall well-being.</p>
+  </div>
+  <div class="yoga-grid">
+      <div class="grid-column video-column">
+          <video controls>
+              <source src="https://media.istockphoto.com/id/1369638596/video/group-of-women-practicing-on-reformer-equipment-in-modern-pilates-studio-exercising-with.mp4?s=mp4-640x640-is&k=20&c=jIK3ekL7jUKs9gd8I_pm-TxM6yXw24Lns21uXV31WL4=" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+      <div class="grid-column image-column">
+          <img id="image1" src="https://i.pinimg.com/736x/88/19/34/8819340ede9522cccc1c140df75975e8.jpg" alt="Pilates Pose 1" style="opacity:1;">
+          <img id="image2" src="https://i.pinimg.com/736x/a2/c8/3a/a2c83ad8d204f20320f09d5e84a9c8ff.jpg" alt="Pilates Pose 2">
+          <img id="image3" src="https://i.pinimg.com/736x/09/06/03/09060383448b571a6c0ed02ea508647d.jpg" alt="Pilates Pose 3">
+      </div>
+  </div>
+</div>
+
+
+<!-- baner -->
+
+<div class="banner">
+<h1>PILATES STUDIO</h1>
+</div>
+
+<div class="gallery">
+<img src="https://i.pinimg.com/736x/c6/26/10/c626102d142854164bd13535282ffd42.jpg" 
+     alt="Image 1" 
+     onmousemove="expandImage(this)" 
+     onmouseleave="shrinkImage(this)">
+     
+<img src="https://i.pinimg.com/736x/a0/e3/fb/a0e3fb0cdfe47fb1e08cf65f478c716b.jpg" 
+     alt="Image 2" 
+     onmousemove="expandImage(this)" 
+     onmouseleave="shrinkImage(this)">
+     
+<img src="https://i.pinimg.com/736x/af/51/d7/af51d701c65acf63d0693d121f633854.jpg" 
+     alt="Image 3" 
+     onmousemove="expandImage(this)" 
+     onmouseleave="shrinkImage(this)">
+</div>
+
+<div class="wrapper">
+  <h1>What will you get?</h1>
+  <div class="grid-container">
+      <div class="grid-item" id="item1"><strong style="color:  #4a5a41;">Flexibility</strong> Fly Yoga improves joint mobility, stretches muscles, and enhances overall body coordination.</div>
+      <div class="grid-item" id="item2"><strong style="color:  #4a5a41;">Strength</strong> Aerial poses engage deep muscles, strengthening the core and improving endurance.</div>
+      <div class="grid-item" id="item3"><strong style="color:  #4a5a41;">Balance</strong> Hanging in the air helps refine balance, develop stability, and boost concentration.</div>
+      <div class="grid-item" id="item4"><strong style="color:  #4a5a41;">Lightness</strong> The anti-gravity effect reduces spinal compression, improves posture, and creates a feeling of weightlessness and relaxation.</div>
+  </div>
+</div>
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-about">
+          <h2 style="color:navy;">AURORA</h2>
+          <p>Inspired by movement and balance, we redefine fitness with Pilates, stretching, and fly yoga to empower your body and mind.</p>
+      </div>
+
+      <div class="footer-section">
+          <h3>Explore AURORA</h3>
+          <ul>
+              <li><a href="./index.html">About Us</a></li>
+              <li><a href="">Our Team</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Cafe</a></li>
+              <li><a href="">Events</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-section">
+          <h3>Classes & Workouts</h3>
+          <ul>
+              <li><a href="./stretching.html">Stretching</a></li>
+              <li><a href="./flyyoga.html">Fly Yoga</a></li>
+              <li><a href="./fitness.html">Fitness</a></li>
+              <li><a href="./pilates.html">Pilates</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-section">
+          <h3>Locations & Studios</h3>
+          <ul>
+              <li><a href="">Our Locations</a></li>
+              <li><a href="">Studio Experience</a></li>
+              <li><a href="">Events</a></li>
+          </ul>
+      </div>
+
+      
+
+      <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Privacy Policy</a></li>
+          </ul>
+      </div>
+  </div>
+</footer>
+
+
+
+<script >
+  function makeCall() {
+    let confirmCall = confirm("Do you want to call +7 777 620 1751?");
+    if (confirmCall) {
+      window.location.href = "tel:+77776201751";
+    }
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+  let images = document.querySelectorAll(".image-column img");
+  let index = 0;
+  
+  setInterval(() => {
+      images.forEach(img => img.style.opacity = "0");
+      images[index].style.opacity = "1";
+      index = (index + 1) % images.length;
+  }, 3000); // Rotates images every 3 seconds
+});
+
+// colapse
+function expandImage(img) {
+  img.classList.add("expanded");
+}
+
+function shrinkImage(img) {
+  img.classList.remove("expanded");
+}
+
+// slider activite
+let image = document.querySelectorAll('.carousel-wrapper img');
+let currentIndex = 0;
+
+function changeImage() {
+    image[currentIndex].classList.remove('current');
+    currentIndex = (currentIndex + 1) % image.length;
+    image[currentIndex].classList.add('current');
+}
+
+setInterval(changeImage, 3000);
+// navbar
+function toggleMenu() {
+  document.getElementById("sidebar").classList.toggle("active");
+}
+
+
+
+
+</script>
+
+  
+</body>
+</html>
