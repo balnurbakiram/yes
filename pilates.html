@@ -8,11 +8,13 @@
 
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
+<header>
     <nav class="navbar">
-        <img class="logo" src="./IMG_2405-Photoroom.png">
-        <ul class="nav-links">
+        <img class="logo" src="./IMG_2405-Photoroom.png" alt="Logo">
+        <div class="burger-menu" id="burger-menu">
+            &#9776;
+        </div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="./index.html">ABOUT US</a></li>
             <li><a href="./stretching.html">STRETCHING</a></li>
             <li><a href="./flyyoga.html">FLY YOGA</a></li>
@@ -20,11 +22,8 @@
             <li><a href="./pilates.html">PILATES</a></li>
             <li><a href="./price.html">PRICE</a></li>
         </ul>
-        
     </nav>
 </header>
-
-
 <!-- yoga  -->
 
 <div class="yoga-container">
@@ -175,10 +174,14 @@ function changeImage() {
 
 setInterval(changeImage, 3000);
 // navbar
-function toggleMenu() {
-  document.getElementById("sidebar").classList.toggle("active");
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerMenu = document.getElementById("burger-menu");
+  const navLinks = document.getElementById("nav-links");
 
+  burgerMenu.addEventListener("click", function () {
+    navLinks.classList.toggle("show");
+  });
+});
 
 
 
