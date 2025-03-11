@@ -34,7 +34,4 @@ function changeImage() {
 }
 
 setInterval(changeImage, 3000);
-// navbar
-function toggleMenu() {
-  document.getElementById("sidebar").classList.toggle("active");
-}
+
