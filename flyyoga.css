@@ -1,8 +1,6 @@
-
-/* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between; /* Align logo and menu properly */
+  justify-content: space-between; 
   align-items: center;
   padding: 0 40px;
   border-radius: 60px;
@@ -17,14 +15,14 @@
   backdrop-filter: blur(10px);
 }
 
-/* Logo */
+
 .logo {
-  width: 150px; /* Adjusted for better proportion */
+  width: 150px; 
   height: auto;
   margin-right: 20px;
 }
 
-/* Nav Links */
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -44,7 +42,39 @@
   color: #004aad;
   cursor: pointer;
 }
+.burger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
 
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: rgba(112, 128, 144, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
 
 body {
   background-color: #eae5df;
