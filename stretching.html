@@ -7,21 +7,22 @@
   <link rel="stylesheet" href="stretching.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header>
-      <nav class="navbar">
-          <img class="logo" src="./IMG_2405-Photoroom.png">
-          <ul class="nav-links">
-              <li><a href="./index.html">ABOUT US</a></li>
-              <li><a href="./stretching.html">STRETCHING</a></li>
-              <li><a href="./flyyoga.html">FLY YOGA</a></li>
-              <li><a href="./fitness.html">FITNESS</a></li>
-              <li><a href="./pilates.html">PILATES</a></li>
-              <li><a href="./price.html">PRICE</a></li>
-          </ul>
-          
-      </nav>
-  </header>
+    <nav class="navbar">
+        <img class="logo" src="./IMG_2405-Photoroom.png" alt="Logo">
+        <div class="burger-menu" id="burger-menu">
+            &#9776;
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./index.html">ABOUT US</a></li>
+            <li><a href="./stretching.html">STRETCHING</a></li>
+            <li><a href="./flyyoga.html">FLY YOGA</a></li>
+            <li><a href="./fitness.html">FITNESS</a></li>
+            <li><a href="./pilates.html">PILATES</a></li>
+            <li><a href="./price.html">PRICE</a></li>
+        </ul>
+    </nav>
+</header>
 
 
   <div class="cont">
@@ -154,6 +155,15 @@
         window.location.href = "tel:+77776201751";
       }
     }
+
+  document.addEventListener("DOMContentLoaded", function () {
+  const burgerMenu = document.getElementById("burger-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  burgerMenu.addEventListener("click", function () {
+    navLinks.classList.toggle("show");
+  });
+});
 </script>
 </body>
 </html>
